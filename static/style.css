@@ -772,7 +772,7 @@ input[type="color"] {
 	align-items: flex-start;
 	gap: 10px;
 	border-bottom: 1px dashed var(--border-color);
-	line-height: 1.4;
+	line-height: 1.37;
 	position: relative;
 }
 
