@@ -407,7 +407,7 @@ input[type="color"] {
 }
 
 .freshvibes-container-header {
-	padding: 8px 12px;
+	padding: 2px 12px;
 	background-color: var(--header-bg-color, var(--background-color-grey));
 	border-bottom: 1px solid var(--border-color);
 	cursor: grab;

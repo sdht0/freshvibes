@@ -235,7 +235,7 @@ class FreshExtension_freshvibes_Controller extends Minz_ActionController {
 				$entries = [];
 
 				foreach ($entryGenerator as $entry) {
-					if ($entry instanceof FreshRSS_Entry) {
+					if ($entry instanceof FreshRSS_Entry && !$entry->isRead()) {
 						$entries[] = [
 							'id' => $entry->id(),
 							'link' => $entry->link(),

@@ -383,11 +383,6 @@ function initializeDashboard(freshvibesView) {
 					ul.appendChild(createEntryItem(entry, feed));
 				});
 				contentDiv.appendChild(ul);
-			} else {
-				const p = document.createElement('p');
-				p.className = 'no-entries';
-				p.textContent = feed.entries?.error || tr.no_entries || 'No recent articles.';
-				contentDiv.appendChild(p);
 			}
 		}
 
