@@ -22,9 +22,7 @@ class FreshExtension_freshvibes_Controller extends Minz_ActionController {
 		$layoutKey = $mode === 'categories'
 			? FreshVibesViewExtension::CATEGORY_LAYOUT_CONFIG_KEY
 			: FreshVibesViewExtension::LAYOUT_CONFIG_KEY;
-		$layout = $userConf->hasParam($layoutKey)
-			? $userConf->param($layoutKey)
-			: null;
+		$layout = null;
 
 		if ($mode === 'categories') {
 			// Always reorder categories according to their position
