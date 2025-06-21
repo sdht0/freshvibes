@@ -92,22 +92,22 @@ if (!Minz_Request::paramBoolean('ajax')) {
 							<label><?= _t('ext.FreshVibesView.limit_label', 'Limit:') ?></label>
 							<select id="bulk-feed-limit">
 								<option value="5">5</option>
-								<option value="10" selected>10</option>
+								<option value="10">10</option>
 								<option value="15">15</option>
 								<option value="20">20</option>
 								<option value="25">25</option>
 								<option value="30">30</option>
 								<option value="40">40</option>
-								<option value="50">50</option>
+								<option value="50" selected>50</option>
 								<option value="unlimited"><?= _t('ext.FreshVibesView.unlimited', 'Unlimited') ?></option>
 							</select>
 						</div>
 						<div class="setting-row">
 							<label><?= _t('ext.FreshVibesView.font_label', 'Font:') ?></label>
 							<select id="bulk-feed-fontsize">
-								<option value="xsmall">Extra Small</option>
+								<option value="xsmall" selected>Extra Small</option>
 								<option value="small">Small</option>
-								<option value="regular" selected>Regular</option>
+								<option value="regular">Regular</option>
 								<option value="large">Large</option>
 								<option value="xlarge">Extra Large</option>
 							</select>
@@ -131,13 +131,13 @@ if (!Minz_Request::paramBoolean('ajax')) {
 							<label><?= _t('ext.FreshVibesView.max_height_label', 'Max height:') ?></label>
 							<select id="bulk-feed-maxheight">
 								<option value="300">300px</option>
-								<option value="400">400px</option>
+								<option value="400" selected>400px</option>
 								<option value="500">500px</option>
 								<option value="600">600px</option>
 								<option value="700">700px</option>
 								<option value="800">800px</option>
 								<option value="unlimited"><?= _t('ext.FreshVibesView.unlimited', 'Unlimited') ?></option>
-								<option value="fit" selected><?= _t('ext.FreshVibesView.fit_to_content', 'Fit to content') ?></option>
+								<option value="fit"><?= _t('ext.FreshVibesView.fit_to_content', 'Fit to content') ?></option>
 							</select>
 						</div>
 						<div class="bulk-actions">
