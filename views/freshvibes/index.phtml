@@ -43,6 +43,9 @@ if (!Minz_Request::paramBoolean('ajax')) {
 
 	data-xextension-freshvibesview-csrf-token="<?php echo htmlspecialchars(FreshRSS_Auth::csrfToken(), ENT_QUOTES); ?>">
 
+</div>
+
+<template id="template-freshvibes-view">
 	<section class="freshvibes-view">
 		<header class="freshvibes-header">
 
@@ -65,7 +68,7 @@ if (!Minz_Request::paramBoolean('ajax')) {
 			?>
 		</div>
 	</section>
-</div>
+</template>
 
 <template id="template-entry-actions">
 	<div class="entry-actions">
