@@ -111,22 +111,22 @@ $settingsJson = htmlspecialchars(json_encode($settingsArray, JSON_HEX_APOS | JSO
 								<label><?= _t('ext.FreshVibesView.limit_label', 'Limit:') ?></label>
 								<select id="bulk-feed-limit">
 									<option value="5">5</option>
-									<option value="10" selected>10</option>
+									<option value="10">10</option>
 									<option value="15">15</option>
 									<option value="20">20</option>
 									<option value="25">25</option>
 									<option value="30">30</option>
 									<option value="40">40</option>
-									<option value="50">50</option>
+									<option value="50" selected>50</option>
 									<option value="unlimited"><?= _t('ext.FreshVibesView.unlimited', 'Unlimited') ?></option>
 								</select>
 							</div>
 							<div class="setting-row">
 								<label><?= _t('ext.FreshVibesView.font_label', 'Font:') ?></label>
 								<select id="bulk-feed-fontsize">
-									<option value="xsmall"><?= _t('ext.FreshVibesView.font_size_xsmall', 'Extra Small') ?></option>
+									<option value="xsmall" selected><?= _t('ext.FreshVibesView.font_size_xsmall', 'Extra Small') ?></option>
 									<option value="small"><?= _t('ext.FreshVibesView.font_size_small', 'Small') ?></option>
-									<option value="regular" selected><?= _t('ext.FreshVibesView.font_size_regular', 'Regular') ?></option>
+									<option value="regular"><?= _t('ext.FreshVibesView.font_size_regular', 'Regular') ?></option>
 									<option value="large"><?= _t('ext.FreshVibesView.font_size_large', 'Large') ?></option>
 									<option value="xlarge"><?= _t('ext.FreshVibesView.font_size_xlarge', 'Extra Large') ?></option>
 								</select>
