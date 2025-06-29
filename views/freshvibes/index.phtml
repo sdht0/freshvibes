@@ -56,12 +56,13 @@ $urlsJson = htmlspecialchars(json_encode($urlsArray, JSON_HEX_APOS | JSON_HEX_AM
 $settingsJson = htmlspecialchars(json_encode($settingsArray, JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_TAG | JSON_HEX_QUOT), ENT_QUOTES);
 ?>
 
-<section class="freshvibes-view"
+<div class="freshvibes-view-container"
 	role="main"
 	data-freshvibes-urls='<?= $urlsJson ?>'
 	data-freshvibes-settings='<?= $settingsJson ?>'
 	data-freshvibes-csrf-token="<?= htmlspecialchars(FreshRSS_Auth::csrfToken(), ENT_QUOTES); ?>">
 
+	<section class="freshvibes-view">
 	<header class="freshvibes-header">
 		<nav class="freshvibes-tabs" aria-label="<?= _t('ext.FreshVibesView.aria_dashboard_tabs', 'Dashboard tabs'); ?>"></nav>
 		<div class="header-actions">
@@ -81,7 +82,8 @@ $settingsJson = htmlspecialchars(json_encode($settingsArray, JSON_HEX_APOS | JSO
 		<?php // Tab panels will be dynamically inserted here by script.js
 		?>
 	</div>
-
+	</section>
+</div>
 	<template id="template-entry-actions">
 		<div class="entry-actions">
 			<button type="button" class="entry-action-btn" data-action="toggle">
@@ -208,8 +210,6 @@ $settingsJson = htmlspecialchars(json_encode($settingsArray, JSON_HEX_APOS | JSO
 			</div>
 		</div>
 	</div>
-
-</section>
 
 <script id="feeds-data-script" type="application/json">
 	<?= json_encode($this->feedsData, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>

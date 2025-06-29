@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const freshvibesView = document.querySelector('.freshvibes-view');
+	const freshvibesView = document.querySelector('.freshvibes-view-container');
 	if (freshvibesView) {
 		// Parse grouped data attributes
 		try {
